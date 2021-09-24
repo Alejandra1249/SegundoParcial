@@ -13,22 +13,33 @@ include_once "includes/register.inc.php";
 				<h2>Regístrate <small></small></h2>
 				<hr class="colorgraph">
 				<div class="row">
-				<div class="form-group">
-					<input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email" tabindex="1" required>
-				</div>
-				<div class="row">
 					<div class="col-xs-12 col-sm-6 col-md-6">
 						<div class="form-group">
-							<input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password" tabindex="2" required>
+							<input type="text" name="first_name" id="first_name" class="form-control input-lg" placeholder="Nombre" tabindex="1" required>
 						</div>
 					</div>
 					<div class="col-xs-12 col-sm-6 col-md-6">
 						<div class="form-group">
-							<input type="password" name="confirm_password" id="confirm_password" class="form-control input-lg" placeholder="Confirmar Password" tabindex="3" required>
+							<input type="text" name="last_name" id="last_name" class="form-control input-lg" placeholder="Apellido" tabindex="2" required>
 						</div>
-						<div class="form-group">
-					<input type="date" name="fechac" id="fechac" class="form-control input-lg" placeholder="Fecha de Creación" tabindex="4" required>
+					</div>
 				</div>
+				<div class="form-group">
+					<input type="text" name="display_name" id="display_name" class="form-control input-lg" placeholder="Usuario" tabindex="3" required>
+				</div>
+				<div class="form-group">
+					<input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email" tabindex="4" required>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-6">
+						<div class="form-group">
+							<input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password" tabindex="5" required>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-6">
+						<div class="form-group">
+							<input type="password" name="confirm_password" id="confirm_password" class="form-control input-lg" placeholder="Confirmar Password" tabindex="6" required>
+						</div>
 					</div>
 				</div>
 				<div class="row">
@@ -92,6 +103,3 @@ include_once "includes/register.inc.php";
 	password.onchange = validatePassword;
 	confirm_password.onkeyup = validatePassword;
 </script>
-<?php
-include_once "footer.php";
-?>
