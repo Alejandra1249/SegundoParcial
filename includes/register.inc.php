@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
 			redirect("index.php");
 			exit;
 
-		} else {
+		} else { 
 			set_message("<p>Error: " . $sql . "<br>" . $conn->error . "</p>");
 		}
 
