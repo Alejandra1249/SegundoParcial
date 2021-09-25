@@ -13,7 +13,3 @@ include_once "header.php";
 	</div>
 	<h1 class="text-center"> Segundo Parcial </h1>
 </div>
-
-<?php
-include_once "footer.php";
-?>
