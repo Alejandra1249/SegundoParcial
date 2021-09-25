@@ -3,7 +3,7 @@ function email_exists($email)
 {
 	global $conn;
 
-	$sql = "SELECT id FROM member WHERE email = '$email'";
+	$sql = "SELECT id FROM usuarios WHERE email = '$email'";
 
 	$result = $conn->query($sql);
 
@@ -17,13 +17,13 @@ function email_exists($email)
 function get_name($email) {
 	global $conn;
 
-	$sql = "SELECT first_name FROM member WHERE email = '$email'";
+	$sql = "SELECT email FROM usuarios WHERE email = '$email'";
 
 	$result = $conn->query($sql);
 
 	$row = $result->fetch_assoc();
 
-	return $row["first_name"];
+	return $row["email"];
 }
 
 function set_message($message) 
@@ -69,4 +69,4 @@ function logged_in(){
 	}
 }
 
-?>
+?> 
