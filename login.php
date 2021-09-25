@@ -3,7 +3,7 @@ include_once "header.php";
 include_once "includes/login.inc.php";
 
 if(logged_in()) {
-    redirect("admin.php");
+    redirect("conferencistas.php");
 }
 ?>
 <div class="container">
@@ -50,7 +50,3 @@ if(logged_in()) {
         </div>  
     </div>
 </div>
-
-<?php
-include_once "footer.php";
-?>
